@@ -253,7 +253,7 @@ var bottlePos{
 
       let imageCtx = imagesCanvas[bot1].getContext('2d');
       imageCtx.clearRect(0, 0, width, height);
-      imageCtx.drawImage(bot1, 0, 0, cardWidth, cardHeight);
+      imageCtx.drawImage(bot1, 0, 0, width, height);
 
       if (params.library == 'gsap') {
         ctx.drawImage(imagesCanvas[name], params.x, params.y);
@@ -279,20 +279,20 @@ var bottlePos{
       });
     }
 
-    function runGsap() {
-      gsap.to(position, {
-        duration: 2,
-        ease: $('#animationType').val(),
-        x: position.xMax,
-        y: position.yMax,
-        onUpdate: function() {
-          drawGsap();
-        },
-        onComplete: function() {
-          position.x = position.origX;
-          position.y = position.origY;
-        }
-      });
+    // function runGsap() {
+    //   gsap.to(position, {
+    //     duration: 2,
+    //     ease: $('#animationType').val(),
+    //     x: position.xMax,
+    //     y: position.yMax,
+    //     onUpdate: function() {
+    //       drawGsap();
+    //     },
+    //     onComplete: function() {
+    //       position.x = position.origX;
+    //       position.y = position.origY;
+    //     }
+    //   });
     
 
     
