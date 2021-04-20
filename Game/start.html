@@ -211,8 +211,8 @@
 function myCanvas(){
 var c=document.getElementById("timmy");
 var ctx=c.getContext("2d");
-var bg=document.getElementById("hold1");
-ctx.drawImage(bg,0,10,680,740);
+var img=document.getElementById("hold1");
+ctx.drawImage(img,0,10,680,740);
 /*Dont forget*/
 var bot1=document.getElementById("bottle1");
 ctx.drawImage(bot1,60,360,60,45);
@@ -252,7 +252,7 @@ var bottlePos{
       imagesCanvas[bot1].height = 45;
 
       let imageCtx = imagesCanvas[bot1].getContext('2d');
-      imageCtx.clearRect(0, 0, cardWidth, cardHeight);
+      imageCtx.clearRect(0, 0, width, height);
       imageCtx.drawImage(bot1, 0, 0, cardWidth, cardHeight);
 
       if (params.library == 'gsap') {
