@@ -1,0 +1,367 @@
+body {
+  background-image: url('https://wallpapercave.com/wp/Y0kLZb7.jpg');
+}
+
+    #hold1{
+    border:1px solid green;
+    position:fixed;
+    left: 400px;
+    top:0px;
+    height: 680px;
+    width: 680px;
+    opacity:0%;
+ }
+
+
+ #timmy{
+    border:1px solid black;
+    position:fixed;
+    left: 400px;
+    top:0px;
+    opacity: 100%;
+    height: 680px;
+    width: 680px;
+ } 
+
+  
+
+.station{
+  position: absolute;
+  left: 400px;
+  top: 260px;
+  animation-name: boating;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes boating{
+  0%   {transform: rotate; left: 400px; top:260px;}
+  25%  {transform: rotate; left: 980px;  top:260px;}
+  50%  {transform: rotatey(180deg); left: 600px; top:260px;}
+  75%  {transform: rotatey(180deg); left:980px; top:260px;}
+  100% {transform: rotate; left:400px; top:260px;}
+  }
+
+  .open{
+  position: absolute;
+  left: 400px;
+  top: 160px;
+  animation-name: cowlick;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cowlick{
+  0%   {transform: rotatey(180deg); left: 550px; top:220px;}
+  50%  {transform: rotatey(-180deg); left: 700px;  top:220px;}
+  100%  {transform: rotatey(180deg); left: 550px; top:220px;}
+  }
+
+ .Again{
+  position: absolute;
+  left: 800px;
+  top: 270px;
+  animation-name: again;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes again{
+  0%   {transform: rotate; left: 800px; top:270px;}
+  25%  {transform: rotate; left: 500px;  top:270px;}
+  50%  {transform: rotatey(180deg); left: 900px; top:270px;}
+  75%  {transform: rotatey(180deg); left:420px; top:270px;}
+  100% {transform: rotate; left:800px; top:270px;}
+}
+
+  .station2{
+  position: absolute;
+  left: 400px;
+  top: 260px;
+  animation-name: slowboy;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slowboy{
+  0%   {transform: rotate; left: 400px; top:200px;}
+  50%  {transform: rotate; left: 930px;  top:200px;}
+  100%  {transform: rotatey(180deg); left: 400px; top:200px;}
+}
+
+.speed{
+  position: absolute;
+  left: 980px;
+  top: 260px;
+  animation-name: hoops;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hoops{
+  0%   {transform: rotatez(20deg); left: 980px; top:260px;}
+  25%  {transform: rotate; left: 400px;  top:260px;}
+  50%  {transform: rotatey(-180deg); left: 980px; top:260px;}
+  75%  {transform: rotatey(180deg); left: 400px;  top:260px;}
+  100%  {transform: rotatez(20deg); left: 980px; top:260px;}
+  }
+
+
+.waves{
+  top: 296px;
+  left: 410px;
+  position: fixed;
+}
+.waves2{
+  top: 296px;
+  left: 490px;
+  position: fixed;
+}
+
+.waves3{
+  top: 296px;
+  left: 420px;
+  position: fixed;
+}
+
+.waves4{
+  top: 296px;
+  left: 490px;
+  position: fixed;
+}
+
+.waves5{
+  top: 296px;
+  left: 560px;
+  position: fixed;
+}
+
+.waves6{
+  top: 296px;
+  left: 620px;
+  position: fixed;
+}
+
+.waves7{
+  top: 296px;
+  left: 690px;
+  position: fixed;
+}
+
+.waves9{
+  top: 296px;
+  left: 780px;
+  position: fixed;
+}
+.waves10{
+  top: 296px;
+  left: 830px;
+  position: fixed;
+}.waves11{
+  top: 296px;
+  left: 910px;
+  position: fixed;
+}
+.waves12{
+  top: 296px;
+  left: 990px;
+  position: fixed;
+
+}
+.waves13{
+  top: 296px;
+  left: 1400px;
+  position: relative;
+}
+
+.flow2{
+  top: 380px;
+  left: 450px;
+  position: absolute;
+}
+
+.flow3{
+  top: 350px;
+  left: 900px;
+  position: absolute;
+}
+
+.flow4{
+  top: 500px;
+  left: 540px;
+  position: absolute;
+}
+.flow5{
+  top: 420px;
+  left: 690px;
+  position: absolute;
+}
+.flow6{
+  top: 500px;
+  left: 900px;
+  position: absolute;
+}
+.flow7{
+  top: 500px;
+  left: 540px;
+  position: absolute;
+}
+
+.crab{
+  position: fixed;
+  left:394px;
+  top: 630px;
+  animation-name: crabby;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes crabbyff{
+  0%   {transform: rotate; left: 394px; top:630px;}
+ 50%  {transform: rotate; left: 1004px; top:630px;}
+ 100%  {transform: rotate; left: 394px; top:630px;}
+}
+
+#fish1{
+position: fixed;
+left:1004px;
+top: 400px;
+animation-name: fish;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+
+
+@keyframes fish{
+  0%  {transform: rotate; left: 1004px; top:500px;}
+ 50%  {transform: rotatey(180deg); left: 394px; top:550px;}
+ 100% {transform: rotate; left: 1004px; top:500px;}
+}
+
+#shark1{
+position: fixed;
+left:1004px;
+top: 500px;
+animation-name: shark;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+
+
+@keyframes shark{
+0%  {transform: rotate; left: 410px; top:500px;}
+25%  {transform: rotatey(180deg); left: 660px; top:550px;}
+50% {transform: rotate; left: 920px; top:500px;}
+75% {transform: rotate; left: 570px; top:550px;}
+100% {transform: rotate; left: 410px; top:500px;}
+} */
+
+.eel{
+position: fixed;
+left:960px;
+top: 330px;
+animation-name: eel;
+animation-duration: 15s;
+animation-iteration-count: infinite;
+animation-delay:2s;
+}
+
+
+@keyframes eel{
+ 0%   {transform: rotate; left: 960px; top:330px;}
+ 10%  {transform: rotate; left: 960px; top:1000px;}
+ 20% {transform: rotate; left: 394px; top:1000px;}
+ 30% {transform: rotatey(-180deg); left: 394px; top:1000px;}
+ 45% {transform: rotatey(180deg); left: 394px; top:330px;}
+ 55% {transform: rotate; left: 394px; top:330px;}
+ 65% {transform: rotate; left: 394px; top:1000px;}
+ 75% {transform: rotate; left: 960px; top:1000px;}
+ 85% {transform: rotate; left: 960px; top:330px;}
+ 100% {transform: rotate;left: 960px; top:330px;}
+}
+
+.birds{
+position: fixed;
+left:960px;
+top: 20px;
+animation-name: birds;
+animation-duration: 15s;
+animation-iteration-count: infinite;
+animation-delay:2s;
+}
+
+@keyframes birds{
+  0%  {transform: rotate; left: 960px; top:20px;}
+ 50%  {transform: rotatey; left: 394px; top:20px;}
+ 100% {transform: rotate; left: 960px; top:20px;}
+}
+
+.birds2{
+position: fixed;
+left:394px;
+top: 20px;
+animation-name: birds2;
+animation-duration: 15s;
+animation-iteration-count: infinite;
+animation-delay:2s;
+}
+
+@keyframes birds2{
+  0%  {transform: rotate; left: 394px; top:20px;}
+ 50%  {transform: rotatey; left: 960px; top:20px;}
+ 100% {transform: rotate; left: 394px; top:20px;}
+}
+
+
+
+ /* #bottle1{
+  position: fixed;
+  top: 330px;
+  left: 460px;
+  opacity: 100%;
+  animation-name: bottle;
+  animation-duration: 15s;
+animation-iteration-count: infinite;
+animation-delay: 2s;
+} */
+
+@keyframes bottler{
+  0%  {opacity: 0%; left:460; top:330}
+ 10%  {opacity: 100%;}
+ 20% {left: 460px; top:630px;}
+ 30% {left: 460px; top:630px;}
+ 40% {left: 460px; top:630px;}
+ 50% {left: 460px; top:630px;}
+ 60% {left: 460px; top:630px;}
+ 70% {left: 460px; top:630px;}
+ 80% {left: 460px; top:630px;}
+ 90% {left: 460px; top:630px;}
+ 100% {left: 460px; top:630px;}
+}
+
+
+#bottle:hover{
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+
+
+.score{
+position: fixed;
+left: 100px;
+color: white;
+font-size: 30;
+}
+
+.scoreChange{
+position: fixed;
+left: 120px;
+color: white;
+font-size: 90;
+}
+
+#saves{
+  background-color: orange;
+  position:fixed;
+}

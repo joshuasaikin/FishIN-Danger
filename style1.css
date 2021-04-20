@@ -1,0 +1,202 @@
+body {
+  background-image: url('https://wallpapercave.com/wp/Y0kLZb7.jpg');
+  width: 680px;
+  height: 740px;
+   left: 400px;
+    top:30px;
+  
+}
+
+ /* #hold1{
+    border:1px solid green;
+    position:fixed;
+    left: 400px;
+    top:0px;
+    height: 680px;
+    width: 680px;
+    opacity:100%;
+ } */
+
+
+ #timmy{
+    border:1px solid black;
+    position:fixed;
+    left: 400px;
+    top:0px;
+    opacity: 100%;
+    height: 680px;
+    width: 680px;
+ }
+
+.waves{
+  top: 350px;
+  left: 410px;
+  position: fixed;
+}
+.waves2{
+  top: 350px;
+  left: 490px;
+  position: fixed;
+}
+
+.waves3{
+  top: 350px;
+  left: 420px;
+  position: fixed;
+}
+
+.waves4{
+  top: 350px;
+  left: 490px;
+  position: fixed;
+}
+
+.waves5{
+  top: 350px;
+  left: 560px;
+  position: fixed;
+}
+
+.waves6{
+  top: 350px;
+  left: 620px;
+  position: fixed;
+}
+
+.waves7{
+  top: 350px;
+  left: 690px;
+  position: fixed;
+}
+
+.waves9{
+  top: 350px;
+  left: 780px;
+  position: fixed;
+}
+.waves10{
+  top: 350px;
+  left: 830px;
+  position: fixed;
+
+}.waves11{
+  top: 350px;
+  left: 910px;
+  position: fixed;
+} 
+ .waves12{
+  top: 350px;
+  left: 990px;
+  position: fixed;
+
+} 
+ .waves13{
+  top: 350px;
+  left: 1400px;
+  position: relative;
+} 
+
+ .flow2{
+  top: 380px;
+  left: 450px;
+  position: absolute;
+}
+
+.flow3{
+  top: 350px;
+  left: 900px;
+  position: absolute;
+}
+
+.flow4{
+  top: 500px;
+  left: 540px;
+  position: absolute;
+}
+.flow5{
+  top: 420px;
+  left: 690px;
+  position: absolute;
+}
+.flow6{
+  top: 500px;
+  left: 900px;
+  position: absolute;
+}
+.flow7{
+  top: 500px;
+  left: 540px;
+  position: absolute;
+}
+
+*/#bottle1{
+  position: fixed;
+  top: 330px;
+  left: 460px;
+  opacity: 40%;
+  animation-name: bottler;
+  animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-delay: 2s;
+} 
+
+
+ @keyframes bottler
+{0%  {opacity: 0%; left:460; top:330}
+ 10%  {opacity: 100%;}
+ 20% {left: 460px; top:630px;}
+ 30% {left: 460px; top:630px;}
+ 40% {left: 460px; top:630px;}
+ 50% {left: 460px; top:630px;}
+ 60% {left: 460px; top:630px;}
+ 70% {left: 460px; top:630px;}
+ 80% {left: 460px; top:630px;}
+ 90% {left: 460px; top:630px;}
+ 100% {left: 460px; top:630px;}
+} */
+
+
+.shark{
+position: fixed;
+left:1004px;
+top: 500px;
+animation-name: shark;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+
+
+@keyframes shark11{
+0%  {transform: rotate; left: 410px; top:500px;}
+25%  {transform: rotatey(180deg); left: 660px; top:550px;}
+50% {transform: rotate; left: 920px; top:500px;}
+75% {transform: rotate; left: 570px; top:550px;}
+100% {transform: rotate; left: 410px; top:500px;}
+}
+
+
+.scoreChange{
+position: fixed;
+left: 120px;
+color: white;
+font-size: 90;
+}
+
+
+#score{
+position: fixed;
+left: 100px;
+color: white;
+font-size: 30;
+}
+
+#scoreChange{
+position: fixed;
+left: 120px;
+color: white;
+font-size: 90;
+}
+
+#saves{
+  background-color: orange;
+}
