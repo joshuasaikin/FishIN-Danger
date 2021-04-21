@@ -7,15 +7,7 @@ body {
   
 }
 
- /* #hold1{
-    border:1px solid green;
-    position:fixed;
-    left: 400px;
-    top:0px;
-    height: 680px;
-    width: 680px;
-    opacity:100%;
- } */
+
 
 
  #timmy{
@@ -129,31 +121,30 @@ body {
   position: absolute;
 }
 
-*/#bottle1{
+.bottle{
   position: fixed;
-  top: 330px;
-  left: 460px;
-  opacity: 40%;
+  top: -330px;
+  left: -460px;
   animation-name: bottler;
-  animation-duration: 5s;
+  animation-duration: 10s;
 animation-iteration-count: infinite;
 animation-delay: 2s;
 } 
 
 
  @keyframes bottler
-{0%  {opacity: 0%; left:460; top:330}
- 10%  {opacity: 100%;}
- 20% {left: 460px; top:630px;}
- 30% {left: 460px; top:630px;}
- 40% {left: 460px; top:630px;}
- 50% {left: 460px; top:630px;}
- 60% {left: 460px; top:630px;}
- 70% {left: 460px; top:630px;}
- 80% {left: 460px; top:630px;}
+{0%  {opacity: 0%; left:900; top:-330}
+ 10% {opacity: 0%; left:800; top:-330}
+ 20% {opacity: 0%; left:900; top:-330}
+ 30% {opacity: 0%; left:800; top:-330}
+ 40% {opacity: 0%; left:900; top:-330}
+ 50% {opacity: 0%; left:800; top:-330}
+ 60% {opacity: 0%; left:900; top:-330}
+ 70% {opacity: 0%; left:300; top:330}
+ 80% {opacity: 100%;}
  90% {left: 460px; top:630px;}
  100% {left: 460px; top:630px;}
-} */
+}
 
 
 .shark{

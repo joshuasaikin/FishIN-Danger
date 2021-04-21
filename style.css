@@ -1,28 +1,70 @@
+
 body {
   background-image: url('https://wallpapercave.com/wp/Y0kLZb7.jpg');
 }
 
-    #hold1{
-    border:1px solid green;
+    .hold{
     position:fixed;
     left: 400px;
-    top:0px;
+    top:6px;
     height: 680px;
     width: 680px;
-    opacity:0%;
+    opacity:100%;
  }
 
 
- #timmy{
-    border:1px solid black;
+  .lvone{
     position:fixed;
     left: 400px;
-    top:0px;
-    opacity: 100%;
+    top:6px;
     height: 680px;
     width: 680px;
- } 
+    opacity:100%;
+ }
 
+  .lvtwo{
+    position:fixed;
+    left: 400px;
+    top:6px;
+    height: 680px;
+    width: 680px;
+    opacity:100%;
+ }
+
+.one{
+  font-size: 30px;
+  left: 590px;
+  top: 500px;
+  position: absolute;
+  color: white;
+}
+
+.two{
+  font-size: 14px;
+  left: 520px;
+  top: 100px;
+  position: absolute;
+  color: white;
+  
+}
+
+.two2{
+  font-size: 14px;
+  left: 420px;
+  top: 100px;
+  position: absolute;
+  color: white;
+  
+}
+  
+.two3{
+  font-size: 14px;
+  left: 490px;
+  top: 100px;
+  position: absolute;
+  color: white;
+  
+}
   
 
 .station{
@@ -216,33 +258,33 @@ body {
   animation-iteration-count: infinite;
 }
 
-@keyframes crabbyff{
+@keyframes crabby{
   0%   {transform: rotate; left: 394px; top:630px;}
  50%  {transform: rotate; left: 1004px; top:630px;}
  100%  {transform: rotate; left: 394px; top:630px;}
 }
 
-#fish1{
+.fish1{
 position: fixed;
 left:1004px;
 top: 400px;
-animation-name: fish;
+animation-name: fishf;
 animation-duration: 10s;
 animation-iteration-count: infinite;
 }
 
 
-@keyframes fish{
+@keyframes fishf{
   0%  {transform: rotate; left: 1004px; top:500px;}
  50%  {transform: rotatey(180deg); left: 394px; top:550px;}
  100% {transform: rotate; left: 1004px; top:500px;}
 }
 
-#shark1{
+.shark{
 position: fixed;
 left:1004px;
 top: 500px;
-animation-name: sharkff;
+animation-name: sharkf;
 animation-duration: 10s;
 animation-iteration-count: infinite;
 }
@@ -254,20 +296,19 @@ animation-iteration-count: infinite;
 50% {transform: rotate; left: 920px; top:500px;}
 75% {transform: rotate; left: 570px; top:550px;}
 100% {transform: rotate; left: 410px; top:500px;}
-} */
+}
 
-.eel{
-position: fixed;
+.eelf{
 left:960px;
 top: 330px;
-animation-name: eel;
+animation-name: eelff;
 animation-duration: 15s;
 animation-iteration-count: infinite;
 animation-delay:2s;
 }
 
 
-@keyframes eel{
+@keyframes eelffyeet{
  0%   {transform: rotate; left: 960px; top:330px;}
  10%  {transform: rotate; left: 960px; top:1000px;}
  20% {transform: rotate; left: 394px; top:1000px;}
@@ -314,54 +355,221 @@ animation-delay:2s;
 
 
 
- /* #bottle1{
+ .bottle{
   position: fixed;
-  top: 330px;
-  left: 460px;
-  opacity: 100%;
-  animation-name: bottle;
-  animation-duration: 15s;
+  top: -330px;
+  left: -460px;
+  animation-name: bottler;
+  animation-duration: 10s;
 animation-iteration-count: infinite;
-animation-delay: 2s;
-} */
+} 
 
-@keyframes bottler{
-  0%  {opacity: 0%; left:460; top:330}
- 10%  {opacity: 100%;}
- 20% {left: 460px; top:630px;}
- 30% {left: 460px; top:630px;}
- 40% {left: 460px; top:630px;}
- 50% {left: 460px; top:630px;}
- 60% {left: 460px; top:630px;}
- 70% {left: 460px; top:630px;}
- 80% {left: 460px; top:630px;}
+
+ @keyframes bottler
+{0%  {opacity: 0%; left:900; top:-330}
+ 10% {opacity: 0%; left:800; top:-330}
+ 30% {opacity: 0%; left:800; top:-330}
+ 40% {opacity: 0%; left:460; top:330}
+ 50% {opacity: 0%; left:460; top:330}
+ 60% {opacity: 100%;}
  90% {left: 460px; top:630px;}
  100% {left: 460px; top:630px;}
 }
 
+.bottlex{
+  position: fixed;
+  top: -330px;
+  left: -460px;
+  animation-name: bottlerx;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+} 
 
-#bottle:hover{
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: black;
+
+ @keyframes bottlerx
+{0%  {opacity: 0%; left:900; top:-330}
+ 10% {opacity: 0%; left:800; top:-330}
+ 30% {opacity: 0%; left:800; top:-330}
+ 40% {opacity: 0%; left:460; top:350}
+ 50% {opacity: 0%; left:460; top:350}
+ 60% {opacity: 0%;}
+ 90% {opacity: 0%;left: 460px; top:650px;}
+ 100% {opacity: 0%;left: 460px; top:650px;}
+}
+
+.bottle2{
+  position: fixed;
+  top: -330px;
+  left: -460px;
+  animation-name: bottler2;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+} 
+
+
+ @keyframes bottler2
+{0%  {opacity: 0%; left:900; top:-330}
+ 10% {opacity: 0%; left:800; top:-330}
+ 30% {opacity: 0%; left:800; top:-330}
+ 40% {opacity: 0%; left:900; top:330}
+ 50% {opacity: 0%; left:900; top:330}
+ 60% {opacity: 100%;}
+ 90% {left: 900px; top:630px;}
+ 100% {left: 900px; top:630px;}
 }
 
 
+.bottlex2{
+  position: fixed;
+  top: -330px;
+  left: -460px;
+  animation-name: bottlerx2;
+  animation-duration: 7s;
+animation-iteration-count: infinite;
+} 
 
-.score{
-position: fixed;
-left: 100px;
-color: white;
-font-size: 30;
+
+ @keyframes bottlerx2
+{0%  {opacity: 0%; left:900; top:-330}
+ 10% {opacity: 0%; left:800; top:-330}
+ 30% {opacity: 0%; left:800; top:-330}
+ 40% {opacity: 0%; left:460; top:350}
+ 50% {opacity: 0%; left:460; top:350}
+ 60% {opacity: 0%;}
+ 90% {opacity: 0%;left: 460px; top:650px;}
+ 100% {opacity: 0%;left: 460px; top:650px;}
 }
 
-.scoreChange{
-position: fixed;
-left: 120px;
-color: white;
-font-size: 90;
+
+.bottle3{
+  position: fixed;
+  top: -330px;
+  left: -460px;
+  animation-name: bottler3;
+  animation-duration: 8s;
+animation-iteration-count: infinite;
+} 
+
+
+ @keyframes bottler3
+{
+ 0% {opacity: 0%; left:560; top:350}
+ 25% {opacity: 0%; left:560; top:350}
+ 50% {opacity: 100%;}
+ 90% {opacity: 100%;left: 560px; top:650px;}
+ 100% {opacity: 100%;left: 560px; top:650px;}
 }
 
-#saves{
-  background-color: orange;
-  position:fixed;
+.bottlex3{
+  position: fixed;
+  top: -330px;
+  left: -460px;
+  animation-name: bottlerx3;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+} 
+
+
+ @keyframes bottlerx3
+{
+ 0% {opacity: 0%; left:560; top:350}
+ 25% {opacity: 0%; left:560; top:350}
+ 50% {opacity: 0%;}
+ 90% {opacity: 0%;left: 560px; top:650px;}
+ 100% {opacity: 0%;left: 560px; top:650px;}
+}
+
+
+.bottle4{
+  position: fixed;
+  top: -330px;
+  left: -460px;
+  animation-name: bottler4;
+  animation-duration: 8s;
+animation-iteration-count: infinite;
+} 
+
+
+ @keyframes bottler4
+{
+ 0% {opacity: 0%; left:560; top:350}
+ 25% {opacity: 0%; left:760; top:350}
+ 50% {opacity: 100%;}
+ 90% {opacity: 100%;left: 760px; top:650px;}
+ 100% {opacity: 100%;left: 760px; top:650px;}
+}
+
+.bottlex4{
+  position: fixed;
+  top: -330px;
+  left: -460px;
+  animation-name: bottlerx4;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+} 
+
+
+ @keyframes bottlerx4{
+ 0% {opacity: 0%; left:560; top:350}
+ 25% {opacity: 0%; left:790; top:350}
+ 50% {opacity: 0%;}
+ 90% {opacity: 0%;left: 79px; top:650px;}
+ 100% {opacity: 0%;left: 790px; top:650px;}
+}
+
+
+.bottle5{
+  position: fixed;
+  top: -330px;
+  left: -460px;
+  animation-name: bottler5;
+  animation-duration: 8s;
+animation-iteration-count: infinite;
+} 
+
+
+ @keyframes bottler5
+{
+ 0% {opacity: 0%; left:560; top:350}
+ 25% {opacity: 0%; left:760; top:350}
+ 50% {opacity: 100%;}
+ 90% {opacity: 100%;left: 760px; top:650px;}
+ 100% {opacity: 100%;left: 760px; top:650px;}
+}
+
+.bottlex5{
+  position: fixed;
+  top: -330px;
+  left: -460px;
+  animation-name: bottlerx5;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+} 
+
+
+ @keyframes bottlerx5{
+ 0% {opacity: 0%; left:560; top:350}
+ 25% {opacity: 0%; left:790; top:350}
+ 50% {opacity: 0%;}
+ 90% {opacity: 0%;left: 79px; top:650px;}
+ 100% {opacity: 0%;left: 790px; top:650px;}
+}
+
+
+.bottlex{
+  position: fixed;
+  top: -330px;
+  left: -460px;
+  animation-name: bottlerx5;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+} 
+
+
+ @keyframes bottlerx5{
+ 0% {opacity: 0%; left:560; top:350}
+ 25% {opacity: 0%; left:790; top:350}
+ 50% {opacity: 0%;}
+ 90% {opacity: 0%;left: 79px; top:650px;}
+ 100% {opacity: 0%;left: 790px; top:650px;}
 }
