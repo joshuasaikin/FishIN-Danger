@@ -83,7 +83,7 @@
 </div>
 
 <div class="fish1">
- <img src="/Images/justkeep.png" width= "80px" height"80px"id="fish11"> 
+ <img src="/Images/justkeep.png" id="fish11"> 
 </div>
 
 <div class="shark">
@@ -209,8 +209,15 @@
 
 <script>
 function myCanvas(){
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 var c=document.getElementById("timmy");
 var ctx=c.getContext("2d");
+const nameWidth = getRandomInt(680);
+const nameHeight =getRandomInt(740);
+const namePadding =getRandomInt(200);
 var img=document.getElementById("hold1");
 ctx.drawImage(img,0,10,680,740);
 /*Dont forget*/
@@ -225,6 +232,11 @@ var bot4=document.getElementById("bottle4");
 ctx.drawImage(bot4,510,360,60,45);
 var shark=document.getElementById("shark1");
 ctx.drawImage(shark,80,400,100,100);
+var fish=document.getElementById("fish11");
+ctx.drawImage(fish,520,100,100,100);
+
+
+
 
    let position = {
       x: namePadding,
@@ -235,6 +247,19 @@ ctx.drawImage(shark,80,400,100,100);
       yMax: canvas.height - namePadding - nameHeight
     };
 
+function getX(params) {
+  let distance = params.xTo - params.xFrom;
+  let steps = params.frames;
+  let progress = params.frame;
+  return distance / steps * progress;
+}
+
+function getY(params) {
+  let distance = params.yTo - params.yFrom;
+  let steps = params.frames;
+  let progress = params.frame;
+  return distance / steps * progress;
+}
 
     function getQuadraticEase(currentProgress, start, distance, steps){
       currentProgress /= steps/2;
@@ -251,8 +276,8 @@ ctx.drawImage(shark,80,400,100,100);
       if (imagesCanvas[name] === undefined) {
         imagesCanvas[name] = document.createElement('timmy');
       }
-      imagesCanvas[name].width = cardWidth;
-      imagesCanvas[name].height = cardHeight;
+      imagesCanvas[name].width = nameWidth;
+      imagesCanvas[name].height = nameHeight;
       imagesCanvas[name].width = 60;
       imagesCanvas[name].height = 45;
 
@@ -271,10 +296,8 @@ ctx.drawImage(shark,80,400,100,100);
           window.requestAnimationFrame(addImage.bind(null, params))
         }
       }
-    }
-    addImage(bottle1, bottle2, bottle3);
-    getQuadraticEase(1,0,50,10);
 
+      
 
   //Everytime I type a sentnce of code I'm going to commit and push
     //gsap section
@@ -297,6 +320,24 @@ Resources
 }
 myCanvas();
 getQuadraticEase();
+
+function play() {
+
+  addImage({
+    name:[bottle1,bottle2, bottle3, bottle4, shark1],
+    frame: 0,
+    frames: 100,
+    xFrom: namePadding,
+    xTo: canvasWidth - nameWidth - namePadding,
+    yFrom: namePadding,
+    yTo: canvasHeight - nameHeight - namePadding
+  });
+}
+
+window.onload = play;
+    }
+    addImage(bottle1, bottle2, bottle3);
+    getQuadraticEase(1,0,50,10);
 
 </script>
 
