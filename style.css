@@ -3,6 +3,24 @@ body {
   background-image: url('https://wallpapercave.com/wp/Y0kLZb7.jpg');
 }
 
+.eztho{
+  font-size: 40px;
+  color: lightblue;
+  position: absolute;
+  left: 600px;
+    top: 8px;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 35px;
+}
+
+.eztho a{
+  font-size: 30px;
+  color: red;
+
+}
+
+
     .hold{
     position:fixed;
     left: 400px;
@@ -12,6 +30,127 @@ body {
     opacity:100%;
  }
 
+.back{
+  font-size: 30px;
+  color: white;
+  left: 30px;
+  top: 10px;
+  position: fixed;
+  border-width: 1px;
+  border-color: solid black;
+  background-color: lightblue;
+  padding: 10px;
+  
+}
+
+
+    .retry{
+    position:fixed;
+    left: 400px;
+    top:6px;
+    height: 680px;
+    width: 680px;
+    animation-name:retry;
+    animation-duration:8.5s;
+    animation-iteration-count: inherit;
+    }
+
+ @keyframes retry{
+  0%  {opacity: 0%; left: 400px; top:-600px;}
+  10%  {opacity: 0%; left: 400px; top:-600px;}
+  30%  {opacity: 0%; left: 400px; top:-600px;}
+  40%  {opacity: 0%; left: 400px; top:-600px;}
+  90%  {opacity: 0%; left: 400px; top:-600px;}
+ 100% {opacity: 100%; left: 400px; top:6px;}
+ }
+
+.retry2{
+    position:fixed;
+    left: 400px;
+    top:6px;
+    height: 680px;
+    width: 680px;
+    animation-name:retry2;
+    animation-duration:8.5s;
+    animation-fill-mode: forwards;
+    opacity: 100%;
+    animation-iteration-count: inherit;
+    }
+
+ @keyframes retry2{
+  0% {opacity: 0%; left: 400px; top:-600px;}
+  10%  {opacity: 0%; left: 400px; top:-600px;}
+  30%  {opacity: 0%; left: 400px; top:-600px;}
+  40%  {opacity: 0%; left: 400px; top:-600px;}
+  90%  {opacity: 0%; left: 400px; top:-600px;}
+  100%  {opacity: 100%; left: 400px; top:6px;}
+ }
+
+ .retry3{
+    position:fixed;
+    left: 400px;
+    top:6px;
+    height: 680px;
+    width: 680px;
+    animation-name:retry3;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+    opacity: 100%;
+    animation-iteration-count: inherit;
+    }
+
+ @keyframes retry3{
+  0% {opacity: 0%; left: 400px; top:-600px;}
+  10%  {opacity: 0%; left: 400px; top:-600px;}
+  30%  {opacity: 0%; left: 400px; top:-600px;}
+  40%  {opacity: 0%; left: 400px; top:-600px;}
+  90%  {opacity: 0%; left: 400px; top:-600px;}
+  100%  {opacity: 100%; left: 400px; top:6px;}
+ }
+
+  .retry4{
+    position:fixed;
+    left: 400px;
+    top:6px;
+    height: 680px;
+    width: 680px;
+    animation-name:retry3;
+    animation-duration:4.5s;
+    animation-fill-mode: forwards;
+    opacity: 100%;
+    animation-iteration-count: inherit;
+    }
+
+ @keyframes retry4{
+  0% {opacity: 0%; left: 400px; top:-600px;}
+  10%  {opacity: 0%; left: 400px; top:-600px;}
+  30%  {opacity: 0%; left: 400px; top:-600px;}
+  40%  {opacity: 0%; left: 400px; top:-600px;}
+  90%  {opacity: 0%; left: 400px; top:-600px;}
+  100%  {opacity: 100%; left: 400px; top:6px;}
+ }
+
+ .retry5{
+    position:fixed;
+    left: 400px;
+    top:6px;
+    height: 680px;
+    width: 680px;
+    animation-name:retry5;
+    animation-duration:8s;
+    animation-fill-mode: forwards;
+    opacity: 100%;
+    animation-iteration-count: inherit;
+    }
+
+ @keyframes retry5{
+  0% {opacity: 0%; left: 400px; top:-600px;}
+  10%  {opacity: 0%; left: 400px; top:-600px;}
+  30%  {opacity: 0%; left: 400px; top:-600px;}
+  40%  {opacity: 0%; left: 400px; top:-600px;}
+  90%  {opacity: 0%; left: 400px; top:-600px;}
+  100%  {opacity: 100%; left: 400px; top:6px;}
+ }
 
   .lvone{
     position:fixed;
@@ -65,8 +204,32 @@ body {
   color: white;
   
 }
-  
 
+  
+.two4{
+  font-size: 14px;
+  left: 415px;
+  top: 100px;
+  position: absolute;
+  color: white;
+  
+}
+  
+.two5{
+  font-size: 14px;
+  left: 430px;
+  top: 100px;
+  position: absolute;
+  color: white;
+  
+}
+.three{
+  font-size: 30px;
+  left: 410px;
+  top: 500px;
+  position: fixed;
+  color: white;
+  }
 .station{
   position: absolute;
   left: 400px;
@@ -551,12 +714,12 @@ animation-iteration-count: infinite;
  0% {opacity: 0%; left:560; top:350}
  25% {opacity: 0%; left:790; top:350}
  50% {opacity: 0%;}
- 90% {opacity: 0%;left: 79px; top:650px;}
- 100% {opacity: 0%;left: 790px; top:650px;}
+ 90% {opacity: 100%;left: 79px; top:650px;}
+ 100% {opacity: 100%;left: 790px; top:650px;}
 }
 
 
-.bottlex{
+.bottlex5{
   position: fixed;
   top: -330px;
   left: -460px;
@@ -572,4 +735,110 @@ animation-iteration-count: infinite;
  50% {opacity: 0%;}
  90% {opacity: 0%;left: 79px; top:650px;}
  100% {opacity: 0%;left: 790px; top:650px;}
+}
+
+.gas{
+  position: fixed;
+  top: 240px;
+  left: 753px;
+  animation-name: gas;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+transform: rotate(-90deg);
+} 
+
+ @keyframes gas{
+ 0% {opacity: 0%; left:5600px; top:240px}
+ 20% {opacity: 0%; left:753px; top:240px}
+ 50% {opacity: 100%; left: 753px; top:20px;}
+ 100% {opacity: 0%; left: 753px; top:20px;}
+}
+
+
+.gasx{
+  position: fixed;
+  top: 220px;
+  left: 753px;
+  animation-name: gasx;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+transform: rotate(-90deg);
+} 
+
+ @keyframes gasx{
+ 0% {opacity: 0%; left:5600px; top:220px}
+ 20% {opacity: 0%; left:753px; top:220px}
+ 50% {opacity: 100%; left: 753px; top:40px;}
+ 100% {opacity: 100%; left: 753px; top:40px;}
+}
+
+.gas2{
+  position: fixed;
+  top: 240px;
+  left: 467px;
+  animation-name: gas2;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+transform: rotate(-90deg);
+} 
+
+ @keyframes gas2{
+ 0% {opacity: 0%; left:5600px; top:240px}
+ 20% {opacity: 0%; left:467px; top:240px}
+ 50% {opacity: 100%; left: 467px; top:20px;}
+ 100% {opacity: 0%; left: 467px; top:20px;}
+}
+
+
+.gasx2{
+  position: fixed;
+  top: 240px;
+  left: 467px;
+  animation-name: gasx2;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+transform: rotate(-90deg);
+} 
+
+ @keyframes gasx2{
+ 0% {opacity: 0%; left:5600px; top:240px}
+ 20% {opacity: 0%; left:467px; top:260px}
+ 50% {opacity: 100%; left: 467px; top:20px;}
+ 100% {opacity: 100%; left: 467px; top:20px;}
+}
+
+
+.gas3{
+  position: fixed;
+  top: 240px;
+  left: 1010px;
+  animation-name: gas3;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+transform: rotate(-90deg);
+} 
+
+ @keyframes gas3{
+ 0% {opacity: 0%; left:5600px; top:240px}
+ 20% {opacity: 0%; left:1010px; top:240px}
+ 50% {opacity: 100%; left: 1010px; top:20px;}
+ 100% {opacity: 0%; left: 1010px; top:20px;}
+}
+
+
+.gasx3{
+  position: fixed;
+  top: 240px;
+  left: 1010px;
+  animation-name: gasx3;
+  animation-duration: 10s;
+animation-iteration-count: infinite;
+transform: rotate(-90deg);
+} 
+
+ @keyframes gasx3{
+ 0% {opacity: 0%; left:1010px; top:260px}
+ 20% {opacity: 0%; left:1010px; top:260px}
+ 50% {opacity: 100%; left: 1010px; top:20px;}
+ 100% {opacity: 100%; left: 1010px; top:20px;}
 }
