@@ -242,13 +242,13 @@ animation-iteration-count: infinite;
 position: fixed;
 left:1004px;
 top: 500px;
-animation-name: shark;
+animation-name: sharkf;
 animation-duration: 10s;
 animation-iteration-count: infinite;
 }
 
 
-@keyframes shark{
+@keyframes sharkf{
 0%  {transform: rotate; left: 410px; top:500px;}
 25%  {transform: rotatey(180deg); left: 660px; top:550px;}
 50% {transform: rotate; left: 920px; top:500px;}

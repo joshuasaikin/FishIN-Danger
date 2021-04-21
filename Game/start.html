@@ -87,7 +87,7 @@
 </div>
 
 <div class="shark">
- <img src="/Images/trueshark.png" width= "200px" height"200px"id="shark1"> 
+ <img src="/Images/trueshark.png" id="shark1"> 
 </div>
 
 
@@ -208,103 +208,69 @@
 </center>
 
 <script>
-// function myCanvas(){
-// var c=document.getElementById("timmy");
-// var ctx=c.getContext("2d");
-// var img=document.getElementById("hold1");
-// ctx.drawImage(img,0,10,680,740);
-// /*Dont forget*/
-// var bot1=document.getElementById("bottle1");
-// ctx.drawImage(bot1,60,360,60,45);
-// /*(var, left, top, width, height)*/
-// var bot2=document.getElementById("bottle2");
-// ctx.drawImage(bot2,210,360,60,45);
-// var bot3=document.getElementById("bottle3");
-// ctx.drawImage(bot3,360,360,60,45);
-// var bot4=document.getElementById("bottle4");
-// ctx.drawImage(bot4,510,360,60,45);
+function myCanvas(){
+var c=document.getElementById("timmy");
+var ctx=c.getContext("2d");
+var img=document.getElementById("hold1");
+ctx.drawImage(img,0,10,680,740);
+/*Dont forget*/
+var bot1=document.getElementById("bottle1");
+ctx.drawImage(bot1,60,360,60,45);
+/*(var, left, top, width, height)*/
+var bot2=document.getElementById("bottle2");
+ctx.drawImage(bot2,210,360,60,45);
+var bot3=document.getElementById("bottle3");
+ctx.drawImage(bot3,360,360,60,45);
+var bot4=document.getElementById("bottle4");
+ctx.drawImage(bot4,510,360,60,45);
+var shark=document.getElementById("shark1");
+ctx.drawImage(shark,80,400,100,100);
 
-// var bottlePos{
-//   x:60,
-//   orgiX:60,
-//   y: 360,
-//   origiY:360,
-//   xMax: c.width - x - 60,
-//   yMax: c.height - y - 360 ,
-  
-// };
+    function getQuadraticEase(currentProgress, start, distance, steps){
+      currentProgress /= steps/2;
+      console.log(currentProgress);
+      if (currentProgress <= 1) {
+        return (distance/2)*currentProgress*currentProgress + start;
+      }
+      currentProgress--;
+      return -1*(distance/2) * (currentProgress*(currentProgress-2) - 1) + start;
+    }
+
+    function addImage(params) {
+      let name = params.name;
+      imagesCanvas[name].width = 60;
+      imagesCanvas[name].height = 45;
+
+      let imageCtx = imagesCanvas[bot1].getContext('2d');
+      imageCtx.clearRect(name, 60, 360,);
+      imageCtx.drawImage(name, 60, 360,);
+      ctx.drawImage(name,80,400,100,100);
+
+      if (params.library == 'gsap') {
+        ctx.drawImage(imagesCanvas[name], params.x, params.y);
+      } else {
+        ctx.drawImage(imagesCanvas[name], getX(params), getY(params));
+        if (params.frame < params.frames) {
+          params.frame = params.frame + 1;
+          window.requestAnimationFrame(drawCanvas);
+          window.requestAnimationFrame(addImage.bind(null, params))
+        }
+      }
+    }
+    addImage(bottle1, bottle2, bottle3);
+    getQuadraticEase(1,0,50,10);
 
 
-
-
-//     function getQuadraticEase(currentProgress, start, distance, steps) {
-//       currentProgress /= steps/2;
-//       if (currentProgress <= 1) {
-//         return (distance/2)*currentProgress*currentProgress + start;
-//       }
-//       currentProgress--;
-//       return -1*(distance/2) * (currentProgress*(currentProgress-2) - 1) + start;
-//     }
-
-//     function addImage(params) {
-//       let name = params.name;
-//       imagesCanvas[bot1].width = 60;
-//       imagesCanvas[bot1].height = 45;
-
-//       let imageCtx = imagesCanvas[bot1].getContext('2d');
-//       imageCtx.clearRect(0, 0, width, height);
-//       imageCtx.drawImage(bot1, 0, 0, width, height);
-
-//       if (params.library == 'gsap') {
-//         ctx.drawImage(imagesCanvas[name], params.x, params.y);
-//       } else {
-//         ctx.drawImage(imagesCanvas[name], getX(params), getY(params));
-//         if (params.frame < params.frames) {
-//           params.frame = params.frame + 1;
-//           window.requestAnimationFrame(drawCanvas);
-//           window.requestAnimationFrame(addImage.bind(null, params))
-//         }
-//       }
-//     }
-
-//   //Everytime I type a sentnce of code I'm going to commit and push
-//     //gsap section
-//     function drawGsap() {
-//       drawCanvas();
-//       addImage({
-//         name: bot1,
-//         library: 'gsap',
-//         x: position.x,
-//         y: position.y
-//       });
-//     }
-
-//     // function runGsap() {
-//     //   gsap.to(position, {
-//     //     duration: 2,
-//     //     ease: $('#animationType').val(),
-//     //     x: position.xMax,
-//     //     y: position.yMax,
-//     //     onUpdate: function() {
-//     //       drawGsap();
-//     //     },
-//     //     onComplete: function() {
-//     //       position.x = position.origX;
-//     //       position.y = position.origY;
-//     //     }
-//     //   });
-    
-
-    
-//         runGsap();
-//     }
-// }
-// Resources
+  //Everytime I type a sentnce of code I'm going to commit and push
+    //gsap section
+   
+   
+Resources
 
 
 /*Dont forget*/
-// var shark=document.getElementById("shark1");
-// ctx.drawImage(shark,60,360,60,45);
+//  var shark=document.getElementById("shark1");
+//  ctx.drawImage(shark);
 // var crab=document.getElementById("crab1");
 // ctx.drawImage(crab,200,360,60,45);
 // var fish=document.getElementById("fish1");
@@ -314,7 +280,8 @@
 // var birdsL=document.getElementById("birds31");
 // ctx.drawImage(birdsL,110,50,920,50);
 }
-
+myCanvas();
+getQuadraticEase();
 
 </script>
 

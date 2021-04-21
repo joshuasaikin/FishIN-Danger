@@ -11,7 +11,7 @@ var myObstacle;
 // ctx.drawImage(img1,10,10,300,150);
 // }
 // myCanvas();
-// function collideMouse() {
+/* function collideMouse() {
 
   // document.getElementsByTagName("canvas");
   // document.canvas.width=680;
