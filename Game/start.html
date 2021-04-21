@@ -226,6 +226,16 @@ ctx.drawImage(bot4,510,360,60,45);
 var shark=document.getElementById("shark1");
 ctx.drawImage(shark,80,400,100,100);
 
+   let position = {
+      x: namePadding,
+      origX: namePadding,
+      y: namePadding,
+      origY: namePadding,
+      xMax: canvas.width - namePading - nameWidth,
+      yMax: canvas.height - namePadding - nameHeight
+    };
+
+
     function getQuadraticEase(currentProgress, start, distance, steps){
       currentProgress /= steps/2;
       console.log(currentProgress);
@@ -238,10 +248,15 @@ ctx.drawImage(shark,80,400,100,100);
 
     function addImage(params) {
       let name = params.name;
+      if (imagesCanvas[name] === undefined) {
+        imagesCanvas[name] = document.createElement('timmy');
+      }
+      imagesCanvas[name].width = cardWidth;
+      imagesCanvas[name].height = cardHeight;
       imagesCanvas[name].width = 60;
       imagesCanvas[name].height = 45;
 
-      let imageCtx = imagesCanvas[bot1].getContext('2d');
+      let imageCtx = imagesCanvas[name].getContext('2d');
       imageCtx.clearRect(name, 60, 360,);
       imageCtx.drawImage(name, 60, 360,);
       ctx.drawImage(name,80,400,100,100);
