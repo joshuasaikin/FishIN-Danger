@@ -178,6 +178,11 @@ body {
   color: white;
 }
 
+.one a{
+      color: aqua;
+  }
+  
+
 .two{
   font-size: 14px;
   left: 520px;
@@ -220,16 +225,42 @@ body {
   left: 430px;
   top: 100px;
   position: absolute;
-  color: white;
-  
 }
+
+.two5 h1{
+  color:orange;
+}
+
+  .two a{
+      color: aqua;
+  }
+  
+  .two2 a{
+      color: aqua;
+  }
+  
+  .two3 a{
+      color: aqua;
+  }
+
+ .two4 a{
+      color: aqua;
+  }
+
+  
+   
 .three{
   font-size: 30px;
   left: 410px;
   top: 500px;
   position: fixed;
-  color: white;
+
   }
+
+  .three a{
+  color: aqua;
+  }
+
 .station{
   position: absolute;
   left: 400px;

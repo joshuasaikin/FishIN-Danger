@@ -1,5 +1,3 @@
-var myGamePiece;
-var myObstacle;
 // This fucntion is definign the length and width of the canvas.
 
 // function myCanvas(){
